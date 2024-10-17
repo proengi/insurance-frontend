@@ -1,0 +1,14 @@
+<h2>Créer une Page CMS</h2>
+<form (ngSubmit)="createCmsPage()">
+  <mat-form-field appearance="fill">
+    <mat-label>Titre</mat-label>
+    <input matInput [(ngModel)]="cmsPage.title" name="title" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Contenu</mat-label>
+    <textarea matInput [(ngModel)]="cmsPage.content" name="content" required></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Créer</button>
+</form>

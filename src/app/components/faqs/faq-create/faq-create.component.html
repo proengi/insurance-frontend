@@ -1,0 +1,14 @@
+<h2>Créer une FAQ</h2>
+<form (ngSubmit)="createFaq()">
+  <mat-form-field appearance="fill">
+    <mat-label>Question</mat-label>
+    <input matInput [(ngModel)]="faq.question" name="question" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Réponse</mat-label>
+    <textarea matInput [(ngModel)]="faq.answer" name="answer" required></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Créer</button>
+</form>
