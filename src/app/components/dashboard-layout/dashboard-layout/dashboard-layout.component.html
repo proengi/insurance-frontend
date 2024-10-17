@@ -1,0 +1,36 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+      <mat-toolbar>Menu</mat-toolbar>
+      <mat-nav-list>
+        <a mat-list-item routerLink="/dashboard">
+          <mat-icon>dashboard</mat-icon>
+          <span>Tableau de Bord</span>
+        </a>
+        <a mat-list-item routerLink="/users">
+          <mat-icon>people</mat-icon>
+          <span>Utilisateurs</span>
+        </a>
+        <a mat-list-item routerLink="/clients">
+          <mat-icon>business</mat-icon>
+          <span>Clients</span>
+        </a>
+        <a mat-list-item routerLink="/offers">
+          <mat-icon>local_offer</mat-icon>
+          <span>Offres</span>
+        </a>
+        <a mat-list-item routerLink="/cms">
+          <mat-icon>web</mat-icon>
+          <span>CMS</span>
+        </a>
+        <a mat-list-item routerLink="/faqs">
+          <mat-icon>help</mat-icon>
+          <span>FAQs</span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

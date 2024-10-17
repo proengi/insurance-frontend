@@ -1,0 +1,14 @@
+<h2>Créer un Utilisateur</h2>
+<form (ngSubmit)="createUser()">
+  <mat-form-field appearance="fill">
+    <mat-label>Nom</mat-label>
+    <input matInput [(ngModel)]="user.username" name="name" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="user.email" name="email" required>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Créer</button>
+</form>
